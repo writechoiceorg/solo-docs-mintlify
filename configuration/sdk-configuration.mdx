@@ -1,0 +1,95 @@
+---
+title: "SDK Configuration"
+description: ""
+---
+
+The Platform Admin portal allows you to customize SOLO's SDK according to your business requirements. You can configure the options available for SMBs connecting with your business, like the integration options and statements that will be available.
+
+In addition to configuring the integration process, you can define which SOLO components will be available and how they will behave. The SOLO components are parts of the SOLO SDK that provide different functionalities for the SMB that have integrated into your business.
+
+## Configuring your SMB Components
+
+To start the walkthrough to configuring your SMB components, follow the steps presented below:
+
+1. Access the Dashboard.
+2. Navigate to the **SDK** section and select the **SMB** page.
+
+Once there, you will be presented with five different configurable tabs, starting with the [Permissioned Data](doc:sdk-configuration#permissioned-data), followed by  [Timeline](doc:sdk-configuration#timeline), [Directory](doc:sdk-configuration#directory), [Financials](doc:sdk-configuration#financials), and [Summary](doc:sdk-configuration#summary).
+
+### Permissioned Data
+
+The Permissioned Data tab allows you to choose which accounts your SMBs will be able to link to SOLO. By toggling on/off the desired options, you can select what your customers will be presented with. On the right side, you have a preview of the SMB screen as you enable more integration options. The image below presents an example of the Permissioned Data tab.
+
+![Permissioned data](images/configuration/sdk-configuration/permissioned-data.png)
+
+
+### Timeline
+
+In the Timeline tab, you can enable or disable your customers' ability to edit a category of a registered transaction, add an attachment, or leave a comment. The activation of each option depends on your business rules. In addition, you have a preview of the SMB client view and can customize the name of the **Transaction** section of the SMB dashboard to suit your preferences better. The image below presents an example of your options in the Timeline tab.
+
+![Timeline](images/configuration/sdk-configuration/timeline.png)
+
+### Directory
+
+SOLO's Directory is a powerful contact management system that helps the SMB organize and manage all contacts in your business's financial transactions.
+
+In the Directory tab, you can choose which tabs will be presented to your customer inside their Directory section of the SMB dashboard. By toggling the options, you will enable or disable each tab. Additionally, you have a preview of the SMB client view and can customize the name of the **Directory** section of the SMB dashboard to suit your preferences better.
+
+The image below presents an example of the Directory tab.
+
+![Directory](images/configuration/sdk-configuration/directory.png)
+
+### Financials
+
+The Financials section of SOLO Platform Admin offers an easy-to-use and intuitive interface for generating detailed financial reports, which SMBs can use after the integration.
+
+Similarly to the Directory tab, the Financials tab gives you options to enable or disable from your customers' SMB dashboard. In addition, you have a preview of the SMB client view and can customize the name of the **Financials** section of the SMB dashboard to better suit your preferences.
+
+The image below presents the options available on the Financials tab.
+
+![Financials](images/configuration/sdk-configuration/financials.png)
+
+### Summary
+
+The Summary tab allows you to enable or disable which charts the SMB dashboard will present your customer in the summary tab of the Financials section. As you toggle the options available, you can check the preview in the right side of the window. The image below represents the toggle options found on the Summary tab:
+
+![Sumarry](images/configuration/sdk-configuration/summary.png)
+
+## Get Embed
+
+When you access the **SMB** page, you have access to the  **\<>Get Embed** button on the screen's top-right corner. After configuring the SDK, you will use this button to access the code to embed the SOLO's SDK on your system. By clicking on  **\<>Get Embed**, you will be presented with a code block containing all you need to add SOLO to your page.
+
+<Tip>
+
+<h3>SOLO React package</h3>
+
+To use SOLO's SDK in your web application, you need to install `solo-react`. It's available on [npm](https://www.npmjs.com/package/solo-react) and [yarn](https://yarnpkg.com/package?q=solo-react&name=solo-react) package managers. Use the following commands to install it on your React application:
+
+```curl
+npm install solo-react
+ 
+// or
+ 
+yarn 
+```
+
+</Tip>
+
+
+Wrap your `MyApp` component in the `Solo.ConfigProvider` component, passing `accessToken` as a prop to connect to SOLO's backend.
+
+Now, you can access all of SOLO's components by following a simple step. You can use any of them in your `MyApp` component tree. Using each will give your customer access to each one of the SOLO dashboard tabs you configured before.
+
+
+<Note>
+
+<h3>Systems supported</h3>
+
+Currently, SOLO's SDK is only available for React applications.
+
+</Note>
+
+
+## Integrating
+
+Refer to our [Integration page](doc:integration) to understand how to integrate SOLO within your system.
